@@ -1,0 +1,13 @@
+diff -Naur eps-1.2/buffer.c eps-1.2.mod/buffer.c
+--- eps-1.2/buffer.c	Sun Sep 29 04:09:39 2002
++++ eps-1.2.mod/buffer.c	Fri Dec 13 18:04:12 2002
+@@ -155,6 +155,9 @@
+         }
+ 
+         else if (*p == '\n') {
++           if (bb->ulen) {
++              if (*(p - 1) == '\r') bb->ulen--;
++           }
+            fn = 1;
+            bb->clen++;
+            break;
