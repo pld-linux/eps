@@ -7,6 +7,7 @@ License:	GPL
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
 # Source0-md5:	20e2e7771e0d99138950ec85880a1d1a
+Patch0:		%{name}-crlf.patch
 URL:		http://www.inter7.com/eps.html
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -50,6 +51,7 @@ Statyczna biblioteka EPS.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %{__make} libeps.a \
