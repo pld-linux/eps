@@ -29,7 +29,7 @@ ten pakiet ma pomóc tych staraniach.
 Summary:	Header files for EPS library
 Summary(pl):	Pliki nag³ówkowe biblioteki EPS
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for EPS library.
@@ -41,7 +41,7 @@ Pliki nag³ówkowe biblioteki EPS.
 Summary:	Static EPS library
 Summary(pl):	Statyczna biblioteka EPS
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static EPS library.
