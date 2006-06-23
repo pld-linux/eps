@@ -1,13 +1,12 @@
 Summary:	Email Processing System
 Summary(pl):	System przetwarzania e-maili
 Name:		eps
-Version:	1.2
+Version:	1.5
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
-# Source0-md5:	20e2e7771e0d99138950ec85880a1d1a
-Patch0:		%{name}-crlf.patch
+# Source0-md5:	842615f5527eacdf91d5dd375ef2e71d
 URL:		http://www.inter7.com/eps.html
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,7 +22,7 @@ EPS to system przetwarzania e-maili (Email Processing System - st±d
 nazwa). Pakiet ma daæ ludziom mo¿liwo¶æ pisania w³asnych narzêdzi do
 przetwarzania poczty elektronicznej. Je¶li chcemy przetwarzaæ listy
 przychodz±ce lub wychodz±ce, albo tylko przeanalizowaæ wiadomo¶æ,
-ten pakiet ma pomóc tych staraniach.
+ten pakiet ma pomóc w tych staraniach.
 
 %package devel
 Summary:	Header files for EPS library
@@ -51,7 +50,6 @@ Statyczna biblioteka EPS.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 %{__make} libeps.a \
