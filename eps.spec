@@ -7,7 +7,7 @@ License:	GPL
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
 # Source0-md5:	842615f5527eacdf91d5dd375ef2e71d
-URL:		http://www.inter7.com/eps.html
+URL:		http://www.inter7.com/?page=eps
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
