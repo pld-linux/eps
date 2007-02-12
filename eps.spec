@@ -1,5 +1,5 @@
 Summary:	Email Processing System
-Summary(pl):	System przetwarzania e-maili
+Summary(pl.UTF-8):   System przetwarzania e-maili
 Name:		eps
 Version:	1.5
 Release:	1
@@ -17,35 +17,35 @@ give people the ability to write their own email processing tools.
 Whether you want to process incoming and outgoing emails, or just
 analyze a message, this package is intended to aid in that endeavor.
 
-%description -l pl
-EPS to system przetwarzania e-maili (Email Processing System - st±d
-nazwa). Pakiet ma daæ ludziom mo¿liwo¶æ pisania w³asnych narzêdzi do
-przetwarzania poczty elektronicznej. Je¶li chcemy przetwarzaæ listy
-przychodz±ce lub wychodz±ce, albo tylko przeanalizowaæ wiadomo¶æ,
-ten pakiet ma pomóc w tych staraniach.
+%description -l pl.UTF-8
+EPS to system przetwarzania e-maili (Email Processing System - stÄ…d
+nazwa). Pakiet ma daÄ‡ ludziom moÅ¼liwoÅ›Ä‡ pisania wÅ‚asnych narzÄ™dzi do
+przetwarzania poczty elektronicznej. JeÅ›li chcemy przetwarzaÄ‡ listy
+przychodzÄ…ce lub wychodzÄ…ce, albo tylko przeanalizowaÄ‡ wiadomoÅ›Ä‡,
+ten pakiet ma pomÃ³c w tych staraniach.
 
 %package devel
 Summary:	Header files for EPS library
-Summary(pl):	Pliki nag³ówkowe biblioteki EPS
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki EPS
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for EPS library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki EPS.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki EPS.
 
 %package static
 Summary:	Static EPS library
-Summary(pl):	Statyczna biblioteka EPS
+Summary(pl.UTF-8):   Statyczna biblioteka EPS
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static EPS library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka EPS.
 
 %prep
