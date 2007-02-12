@@ -1,5 +1,5 @@
 Summary:	Email Processing System
-Summary(pl.UTF-8):   System przetwarzania e-maili
+Summary(pl.UTF-8):	System przetwarzania e-maili
 Name:		eps
 Version:	1.5
 Release:	1
@@ -26,7 +26,7 @@ ten pakiet ma pomóc w tych staraniach.
 
 %package devel
 Summary:	Header files for EPS library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki EPS
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki EPS
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -38,7 +38,7 @@ Pliki nagłówkowe biblioteki EPS.
 
 %package static
 Summary:	Static EPS library
-Summary(pl.UTF-8):   Statyczna biblioteka EPS
+Summary(pl.UTF-8):	Statyczna biblioteka EPS
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
