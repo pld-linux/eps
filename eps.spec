@@ -2,7 +2,7 @@ Summary:	Email Processing System
 Summary(pl.UTF-8):	System przetwarzania e-maili
 Name:		eps
 Version:	1.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
