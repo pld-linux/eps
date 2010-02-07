@@ -1,12 +1,12 @@
 Summary:	Email Processing System
 Summary(pl.UTF-8):	System przetwarzania e-maili
 Name:		eps
-Version:	1.5
-Release:	2
+Version:	1.7
+Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
-# Source0-md5:	842615f5527eacdf91d5dd375ef2e71d
+# Source0-md5:	55385a89db651207c4f8a3c49bd1f8e6
 URL:		http://www.inter7.com/?page=eps
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -54,12 +54,14 @@ Statyczna biblioteka EPS.
 %build
 %{__make} libeps.a \
 	CC="libtool --mode=compile %{__cc}" \
-	DEFS="%{rpmcflags} -Wall -I."
+	DEFS="%{rpmcppflags} %{rpmcflags} -Wall -I."
 
 libtool --mode=link %{__cc} -o libeps.la *.lo -rpath %{_libdir}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
+touch libeps.so
 
 %{__make} install \
 	LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
