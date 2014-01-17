@@ -2,7 +2,7 @@ Summary:	Email Processing System
 Summary(pl.UTF-8):	System przetwarzania e-maili
 Name:		eps
 Version:	1.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
@@ -79,6 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog TODO doc/{credits,howto,license}
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
 
 %files devel
 %defattr(644,root,root,755)
