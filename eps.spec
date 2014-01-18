@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	System przetwarzania e-maili
 Name:		eps
 Version:	1.7
 Release:	2
-License:	GPL
+License:	GPL v2+
 Group:		Libraries
 Source0:	http://www.inter7.com/eps/%{name}-%{version}.tar.gz
 # Source0-md5:	55385a89db651207c4f8a3c49bd1f8e6
@@ -78,15 +78,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog TODO doc/{credits,howto,license}
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
+%attr(755,root,root) %{_libdir}/libeps.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libeps.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
+%attr(755,root,root) %{_libdir}/libeps.so
+%{_libdir}/libeps.la
 %{_includedir}/eps
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libeps.a
